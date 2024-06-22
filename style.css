@@ -37,13 +37,13 @@ main {
   position: relative;
 }
 
-.control-dice img:not(img:nth-of-type(1)) {
+.dice-img:not(.dice-img:nth-of-type(1)) {
   position: absolute;
   left: 0;
   top: 0;
 }
 
-.control-dice img {
+.dice-img {
   opacity: 0;
 }
 
