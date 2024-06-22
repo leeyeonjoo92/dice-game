@@ -25,6 +25,7 @@ main {
 .control-wrapper {
   width: 20%;
   text-align: center;
+  transition: 0.3s;
 }
 
 /* 주사위 */
@@ -58,6 +59,11 @@ main {
   width: 100%;
 }
 
+.btn-control:hover {
+  background: var(--magenta);
+  color: #fff;
+}
+
 .control-roll {
   margin-top: 12vh;
   margin-bottom: 3vh;
@@ -68,10 +74,12 @@ main {
  */
 .player-wrapper {
   width: 30%;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 15px;
   text-align: center;
   padding: 50px 80px;
+  opacity: 0.3;
+  transition: 0.3s;
 }
 
 /* 플레이어명 */
@@ -102,9 +110,10 @@ main {
 }
 
 /**************************************
- *	A 점수
+ *	현재 플레이어 강조 (js로 추가)
  */
-
-/**************************************
- *	B 점수
- */
+.my-turn {
+  transform: scale(1.2);
+  font-weight: bold;
+  opacity: 1;
+}
