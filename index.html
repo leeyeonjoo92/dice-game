@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="player-wrapper a-wrapper">
+        <div class="player-name player-a">A</div>
+        <div class="player-total-score total-score-a">0</div>
+        <div class="player-current-score current-score-a">
+          <div>Current</div>
+          <div class="score score-a">0</div>
+        </div>
+      </section>
+
+      <section class="control-wrapper">
+        <div class="control-dice">
+          <img src="./src/dice-1.svg" alt="dice-1" class="dice-num dice-1" />
+          <img src="./src/dice-2.svg" alt="dice-1" class="dice-num dice-2" />
+          <img src="./src/dice-3.svg" alt="dice-1" class="dice-num dice-3" />
+          <img src="./src/dice-4.svg" alt="dice-1" class="dice-num dice-4" />
+          <img src="./src/dice-5.svg" alt="dice-1" class="dice-num dice-5" />
+          <img src="./src/dice-6.svg" alt="dice-1" class="dice-num dice-6" />
+        </div>
+        <button class="btn-control control-roll">🎲 Roll Dice</button>
+        <button class="btn-control control-hold">⛔ Hold</button>
+      </section>
+
+      <section class="player-wrapper b-wrapper">
+        <div class="player-name player-b">B</div>
+        <div class="player-total-score total-score-b">0</div>
+        <div class="player-current-score current-score-b">
+          <div>Current</div>
+          <div class="score score-b">0</div>
+        </div>
+      </section>
+    </main>
+
+    <script href="script.js"></script>
+  </body>
+</html>
